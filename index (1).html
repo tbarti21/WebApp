@@ -1,22 +1,66 @@
 <!DOCTYPE html>
-<html lang="ca">
-	<head>
-		<meta charset="UTF-8">    <!-- codificació del text (UTF-8) -->
-    		<meta name="viewport" content="width=device-width, initial-scale=1">    <!-- adapta la visualització a les mides de la pantalla -->
-    		<meta name="description" content="Un memory per disfrutar .">    <!-- breu descripció per als cercadors -->
-   		 <title>    
-        	Memory
-   		 </title>
-		<link rel="stylesheet" href="index.css">
-	</head>
-	<body>
-		<div id="superior">    <!-- franja superior per mostar el nom de la webapp -->
-       		 Memory
-    		</div>
-   		 <div id="seccio_1">    <!-- espai central per mostrar contingut -->
-       		 Play
-    		</div>
-   		 <div id="menu">    <!-- franja inferior per al menú de navegació -->
-   		 </div>
-	</body>
+<html>
+         <head>
+
+ 
+<meta charset="UTF-8">    <!-- codificació del text (UTF-8) -->
+<meta name="viewport" content="width=device-width, initial-scale=1">    <!-- adapta la visualització a les mides de la pantalla -->
+    <meta name="description" content="Una app per a poder socialitzari no tornar-te a sentir-te sol mai mes.">    <!-- breu descripció per als cercadors -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css">
+<title>    
+Connectat
+        </title>
+<link rel="stylesheet" href="index.css">
+<script  src="index.js"></script>
+</head>
+         <body>
+
+   
+  <div id="superior">   Connectat
+       
+    </div>
+    <div id=coneixer>      
+       
+    </div>
+ <div id="seccio_0" class="seccio">
+
+        Inici de sessió    <!-- títol de la secció -->
+
+      <div id="credencials">    <!-- contenidor per als quadres de text -->
+        <div>
+          <label for="nom_usuari">Nom d'usuari</label>
+          <input type="text" id="nom_usuari">
+        </div>
+        <div>
+          <label for="contrasenya">Contrasenya</label>        
+          <input type="password" id="contrasenya">
+        </div>
+      </div>
+<div id="botons_sessio">
+  <button onclick="inici_sessio()">Inicia sessió</button>
+  <button onclick="nou_usuari()">Nou usuari</button>
+
+</div>        
+ </div>
+
+           
+    </div>
+ <div id="seccio_1" class="seccio">buscar gent</div>
+<div id="seccio_2" class="seccio">perfil propi</div>
+<div id="seccio_3" class="seccio">configuració</div>
+     <div id="seccio_4" class="seccio">sortir</div>
+<div id="menu">      
+  <i id="boto_1" class="fa-solid fa-house" onclick="canvia_seccio(1)"></i>    
+  <i id="boto_2" class="fa-solid fa-camera" onclick="canvia_seccio(2)"></i>
+  <i id="boto_3" class="fa-solid fa-image" onclick="canvia_seccio(3)"></i>
+  <i id="boto_4" class="fa-solid fa-map" onclick="canvia_seccio(4)"></i>
+  <i class="fa-solid fa-right-from-bracket" onclick="tanca_sessio()"></i>
+
+</div>
+
+
+
+
+</body>
 </html>
